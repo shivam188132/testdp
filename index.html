@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Turtolials</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3badb235a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo" >
+                <ul id="sidemenu">
+                    <li> <a href="#Header"> Home </a></li>
+                    <li> <a href="#about"> About </a></li>
+                    <li> <a href="#services"> Services </a></li>
+                    <li> <a href="#portfolio"> Portfolio </a></li>
+                    <li> <a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark fa-bounce" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Science/Web Devlopment</p>
+                <h1>Hi, I'm <span>Shivam</span> <br> I aspire to become a proficient Data Scientist </h1>
+            </div>
+        </div>
+    </div>
+<!------------------------------------------------------------------about----------------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Passionate about leveraging data for informed decision-making, I'm a data science enthusiast currently focusing on expanding my skills. Proficient in Python programming, SQL and MS Excel, I'm eager to apply my knowledge to drive data-driven solutions.<br>
+                        As I embark on my data science journey, I am eager to collaborate with professionals and organizations that share my passion for data's transformative power. I am seeking opportunities where I can contribute my skills, learn from experienced mentors, and make a meaningful impact by solving complex problems through data science
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Python</U></span><br>Python for data analysis and devlopment </li>
+                            <li><span>Web Devlopment</U></span><br>Designing Webinterfaces(Frontend)  using Html and Css</li>
+                            <li><span>Data Analytics</U></span><br>Power Bi, S.Q.L and MS. Excel</li>
+                            
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Accenture North America Data Analytics and Visualization Job Simulation</U></span><br>
+                            <ol>Completed a simulation focused on advising a hypothetical social media client
+                                as a Data Analyst at Accenture</ol>
+                            <ol>
+                                Cleaned, modelled and analyzed 7 datasets to uncover insights into content
+                                trends to inform strategic decisions
+                            </ol>
+                            <ol>
+                                Prepared a PowerPoint deck and video presentation to communicate key insights
+                                for the client and internal stakeholder
+                            </ol>
+                            </li>
+                            <!-- <li><span>ex02</U></span><br>Designing Web/App interfaces</li> -->
+                            <!-- <li><span>ex03</U></span><br>Designing Web/App interfaces</li> -->
+                            
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>BIRLA INSTITUTE OF TECHNOLOGY, Mesra</U></span><br>B.tech in Information Technology</li>
+                            <li><span>HIMALAYAN INTL. SCHOOL, Patna</U></span><br>12th</li>
+                            <li><span>D.RAM DAV PUBLIC SCHOOL, GOLA ROAD</U></span><br>10th</li>
+                            
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------------------------------services-------------------------------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python</h2>
+                    <p> I embarked on my Python programming journey through the Udemy course by Dr. Angela Yu, "Complete Python Bootcamp: Go from zero to hero in Python 3." This comprehensive course challenged me to build 100 projects in 100 days, and I've successfully completed 62 projects to date. Ranging from small-scale applications to more complex endeavors, these projects have equipped me with practical skills and a solid foundation in Python programming.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Design</h2>
+                    <p> I kickstarted my journey in web development by learning HTML and CSS through YouTube courses, diving into the intricacies of web design. Subsequently, I seamlessly integrated this knowledge into real-world projects, where I employed Python for the backend functionality and HTML/CSS for the frontend. The synergy of backend Python prowess and frontend design finesse has empowered me to create robust, end-to-end solutions</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>>
+                    <h2>Data Analytics</h2>
+                    <p> My journey in technology extends beyond web development as I've delved into the realms of data analytics. Through Udemy courses, I mastered Power BI for insightful data visualization and SQL for efficient database management. Applying these skills, I crafted real-world projects, including an Instagram clone, showcasing my ability to blend frontend and backend technologies seamlessly.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+
+    <!-- -----------------------portfolio ------------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/qqw12.jpg">
+                    <div class="layer">
+                        <h3>Flash Card App</h3>
+                        <p>
+                            
+I created a Python Flash Card app using pandas for CSV data. tkinter displays French words, prompting users to guess meanings. True/False buttons track accuracy, updating scores dynamically and logging errors for focused learning.
+
+                        </p>
+                        <a href="https://github.com/shivam188132/flash-card"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/snake.jpg">
+                    <div class="layer">
+                        <h3>Snake Game</h3>
+                        <p>
+                            I developed a classic Snake game using Python and its libraries, including tkinter and turtle. Highest Score
+tracking is done using json data file. In the game, players control a snake that grows longer as it consumes
+balls, with the goal of avoiding collisions that lead to the snake's demise. The graphical interface is
+implemented using tkinter and turtle, providing a visually engaging experience for players
+                        </p>
+                        <a href="https://github.com/shivam188132/Snake-Game"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Smart Housing Locator</h3>
+                        <p>
+                            I employed web scraping to extract rental data (link, address, price) from a website. Automated input into a Google Form and integrated results into Google Sheets, streamlining housing information management.
+                        </p>
+                        <a href="https://github.com/shivam188132/Smart-Housing-Locator"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/100daysofcode.jpg">
+                    <div class="layer">
+                        <h3>100 days of Python</h3>
+                        <p>
+                           Mastering my Python skills by building 100 projects in 100 days. Learning data science,automation,building websites, games and apps!
+                        </p>
+                        <a href="https://github.com/shivam188132/100-days-of-code"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+<!-- -------------------------------contact ---------------------------------------- -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> shivamkumar819991@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9835568198</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/shivamkumar.singh.14224?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/shivam188132"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shivam-kumar-5a6b42237/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://instagram.com/its_shivam_krr?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-instagram"></i></a>
+
+                </div>
+                <a href="images/resume.pdf" download class="btn btn2">Downloard Cv</a>
+                <a href="images/JEE MAINS score card.pdf" download class="btn btn2">Jee main score card</a>
+            </div>
+            <div class="contact-right"></div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2"> Submit </button>
+            </form>
+            <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>
+            copyright © Shivam. Made with <i class="fa-solid fa-heart"></i> Love 
+        </p>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu (){
+        sidemenu.style.right = '0';
+
+    }
+    function closemenu (){
+        sidemenu.style.right = '-200px';
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbznCzihxXj692jLXdoY3UBrhYntdnQtpH4yqNp921IXsobsdx-RVLvYe9H-HcTzMrtMqg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {msg.innerHTML = "Message Sent Successfully"
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+    })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
